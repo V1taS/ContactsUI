@@ -18,8 +18,17 @@ struct ListContacts: View {
                 ForEach(persons, id: \.email) { person in
                     Section(header: Text("\(person.fullName)")) {
                         
-                        Text("E-mail: \(person.email)")
-                        Text("Phone number: \(person.phone)")
+                        HStack {
+                            Image(systemName: "tray.and.arrow.down")
+                                .foregroundColor(.blue)
+                            Text("E-mail: \(person.email)")
+                        }
+                        
+                        HStack {
+                            Image(systemName: "phone.circle")
+                                .foregroundColor(.blue)
+                            Text("Phone: \(person.phone)")
+                        }
                     }
                 }
             }
