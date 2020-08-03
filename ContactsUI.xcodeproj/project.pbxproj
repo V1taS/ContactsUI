@@ -13,6 +13,11 @@
 		1BEA486124D8A36D00CA992E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BEA486024D8A36D00CA992E /* Assets.xcassets */; };
 		1BEA486424D8A36D00CA992E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BEA486324D8A36D00CA992E /* Preview Assets.xcassets */; };
 		1BEA486724D8A36D00CA992E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BEA486524D8A36D00CA992E /* LaunchScreen.storyboard */; };
+		1BEA487324D8A42700CA992E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEA487224D8A42700CA992E /* Person.swift */; };
+		1BEA487524D8A44B00CA992E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEA487424D8A44B00CA992E /* DataManager.swift */; };
+		1BEA487724D8A67200CA992E /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEA487624D8A67200CA992E /* Contacts.swift */; };
+		1BEA487924D8A71E00CA992E /* ListContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEA487824D8A71E00CA992E /* ListContacts.swift */; };
+		1BEA487B24D8AB3100CA992E /* DescriptionContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEA487A24D8AB3100CA992E /* DescriptionContact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		1BEA486324D8A36D00CA992E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1BEA486624D8A36D00CA992E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BEA486824D8A36D00CA992E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BEA487224D8A42700CA992E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		1BEA487424D8A44B00CA992E /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		1BEA487624D8A67200CA992E /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
+		1BEA487824D8A71E00CA992E /* ListContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListContacts.swift; sourceTree = "<group>"; };
+		1BEA487A24D8AB3100CA992E /* DescriptionContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionContact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +66,15 @@
 		1BEA485924D8A36B00CA992E /* ContactsUI */ = {
 			isa = PBXGroup;
 			children = (
-				1BEA485A24D8A36B00CA992E /* AppDelegate.swift */,
-				1BEA485C24D8A36B00CA992E /* SceneDelegate.swift */,
+				1BEA487124D8A3E300CA992E /* Services */,
 				1BEA485E24D8A36B00CA992E /* ContentView.swift */,
-				1BEA486024D8A36D00CA992E /* Assets.xcassets */,
-				1BEA486524D8A36D00CA992E /* LaunchScreen.storyboard */,
-				1BEA486824D8A36D00CA992E /* Info.plist */,
+				1BEA487624D8A67200CA992E /* Contacts.swift */,
+				1BEA487A24D8AB3100CA992E /* DescriptionContact.swift */,
+				1BEA487824D8A71E00CA992E /* ListContacts.swift */,
+				1BEA486E24D8A38B00CA992E /* Source */,
+				1BEA486F24D8A39A00CA992E /* Storyboard */,
 				1BEA486224D8A36D00CA992E /* Preview Content */,
+				1BEA487024D8A3AA00CA992E /* OtherFiles */,
 			);
 			path = ContactsUI;
 			sourceTree = "<group>";
@@ -73,6 +85,41 @@
 				1BEA486324D8A36D00CA992E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1BEA486E24D8A38B00CA992E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1BEA486024D8A36D00CA992E /* Assets.xcassets */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		1BEA486F24D8A39A00CA992E /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1BEA486524D8A36D00CA992E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		1BEA487024D8A3AA00CA992E /* OtherFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1BEA485A24D8A36B00CA992E /* AppDelegate.swift */,
+				1BEA485C24D8A36B00CA992E /* SceneDelegate.swift */,
+				1BEA486824D8A36D00CA992E /* Info.plist */,
+			);
+			path = OtherFiles;
+			sourceTree = "<group>";
+		};
+		1BEA487124D8A3E300CA992E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1BEA487224D8A42700CA992E /* Person.swift */,
+				1BEA487424D8A44B00CA992E /* DataManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,7 +194,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BEA485B24D8A36B00CA992E /* AppDelegate.swift in Sources */,
+				1BEA487524D8A44B00CA992E /* DataManager.swift in Sources */,
+				1BEA487724D8A67200CA992E /* Contacts.swift in Sources */,
+				1BEA487B24D8AB3100CA992E /* DescriptionContact.swift in Sources */,
+				1BEA487924D8A71E00CA992E /* ListContacts.swift in Sources */,
 				1BEA485D24D8A36B00CA992E /* SceneDelegate.swift in Sources */,
+				1BEA487324D8A42700CA992E /* Person.swift in Sources */,
 				1BEA485F24D8A36B00CA992E /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +340,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ContactsUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 34VDSPZYU9;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ContactsUI/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ContactsUI/OtherFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +360,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ContactsUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 34VDSPZYU9;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ContactsUI/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ContactsUI/OtherFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
